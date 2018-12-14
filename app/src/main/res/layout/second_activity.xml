@@ -1,0 +1,45 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    >
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:onClick="exit"
+        android:textColor="@color/white"
+        android:background="@drawable/enter_button_background"
+        android:layout_marginTop="2dp"
+        android:text="Выйти"
+        android:layout_marginLeft="13.3636363636364dp"
+        android:layout_marginRight="13.3636363636364dp"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/exit"
+        android:layout_alignStart="@+id/exit" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:onClick="onClickCamera"
+        android:textColor="@color/white"
+        android:background="@drawable/enter_button_background"
+        android:text="camera"
+        android:textSize="18sp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

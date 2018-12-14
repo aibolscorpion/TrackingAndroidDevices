@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:hint="Логин"
+        android:textColorHint="@color/button_text_color"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/button_text_color"
+        android:background="@drawable/login_edit_text_background"
+        android:layout_marginLeft="13.3636363636364dp"
+        android:layout_marginRight="13.3636363636364dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textColorHint="@color/button_text_color"
+        android:layout_below="@+id/login"
+
+        android:textColor="@color/button_text_color"
+        android:background="@drawable/password_edit_text_background"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="13.3636363636364dp"
+        android:layout_marginRight="13.3636363636364dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:onClick="login"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:layout_below="@+id/password"
+        android:background="@drawable/enter_button_background"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="13.3636363636364dp"
+        android:layout_marginRight="13.3636363636364dp"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Регистрация"
+        android:id="@+id/registrationTV"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp"
+        android:onClick="registration"
+        android:autoText="true"
+        android:clickable="false"
+        android:textColor="#fffefff5" />
+
+
+</RelativeLayout>
